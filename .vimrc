@@ -58,6 +58,8 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 au BufNewFile,BufRead *.less set filetype=less
 
+map <Leader>t :FuzzyFinderTextMate<Enter>
+
 nmap <Tab> >>
 nmap <S-Tab> <<
 
